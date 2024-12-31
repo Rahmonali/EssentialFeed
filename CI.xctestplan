@@ -4,7 +4,7 @@
       "id" : "226FDCF6-2247-4364-9FEC-97A3A76441F5",
       "name" : "Test Scheme Action",
       "options" : {
-
+        "threadSanitizerEnabled" : true
       }
     }
   ],
@@ -18,7 +18,8 @@
         }
       ]
     },
-    "testExecutionOrdering" : "random"
+    "testExecutionOrdering" : "random",
+    "threadSanitizerEnabled" : true
   },
   "testTargets" : [
     {
