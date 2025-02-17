@@ -56,6 +56,7 @@
 		A1CA1E812D30E93900359FD4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				SharedTestHelpers.swift,
 				"XCTestCase+MemoryLeakTrackingHelper.swift",
 			);
 			target = A1121F8E2D1D1A4900D96D30 /* EssentialFeedAPIEndToEndTests */;
