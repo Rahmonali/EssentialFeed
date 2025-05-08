@@ -65,7 +65,15 @@
 		A177CD6B2DCD0D2500985D50 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				SharedTestHelpers.swift,
 				"XCTestCase+MemoryLeakTrackingHelper.swift",
+			);
+			target = A177CD5F2DCD04A900985D50 /* EssentialFeedCacheIntegrationTests */;
+		};
+		A177CD6D2DCD0F5500985D50 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/FeedCacheTestHelpers.swift,
 			);
 			target = A177CD5F2DCD04A900985D50 /* EssentialFeedCacheIntegrationTests */;
 		};
@@ -99,7 +107,7 @@
 		A11512A72D095DFF00E9AFC2 /* Feed API */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A11512AA2D095E0A00E9AFC2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Feed API"; sourceTree = "<group>"; };
 		A158CF782D0C071C00298F5E /* Feed API */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Feed API"; sourceTree = "<group>"; };
 		A177CD612DCD04A900985D50 /* EssentialFeedCacheIntegrationTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = EssentialFeedCacheIntegrationTests; sourceTree = "<group>"; };
-		A1CA1E782D30E3EB00359FD4 /* Feed Cache */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Feed Cache"; sourceTree = "<group>"; };
+		A1CA1E782D30E3EB00359FD4 /* Feed Cache */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A177CD6D2DCD0F5500985D50 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Feed Cache"; sourceTree = "<group>"; };
 		A1CA1E7E2D30E93900359FD4 /* Helpers */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A1CA1E812D30E93900359FD4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, A177CD6B2DCD0D2500985D50 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Helpers; sourceTree = "<group>"; };
 		A1E455262D537F1300740ABF /* Feed Cache */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A1E455292D537F4500740ABF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Feed Cache"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
