@@ -82,6 +82,9 @@ Location</string>
                                                             <state key="normal" title="􀅈">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="vDL-Nl-mgj" eventType="touchUpInside" id="9BU-X2-l8k"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -122,6 +125,14 @@ Location</string>
                                         <constraint firstAttribute="trailingMargin" secondItem="sWG-jI-Q4c" secondAttribute="trailing" id="nEA-RF-4nd"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="Vmo-aE-xKm" id="7o4-55-9cv"/>
+                                    <outlet property="feedImageContainer" destination="pKq-Da-zvb" id="xO8-Wq-nRq"/>
+                                    <outlet property="feedImageRetryButton" destination="cux-lS-nXC" id="Ph4-Kn-1hC"/>
+                                    <outlet property="feedImageView" destination="a7a-P5-YWF" id="6Ts-M5-01V"/>
+                                    <outlet property="locationContainer" destination="szx-li-Lio" id="o2d-qe-887"/>
+                                    <outlet property="locationLabel" destination="DLn-Bg-brw" id="agV-mu-nJP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
