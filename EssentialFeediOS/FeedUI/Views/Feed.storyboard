@@ -127,6 +127,7 @@ Location</string>
                         <connections>
                             <outlet property="dataSource" destination="RES-fD-zgp" id="s3P-Dc-GN1"/>
                             <outlet property="delegate" destination="RES-fD-zgp" id="ca8-HZ-HYh"/>
+                            <outlet property="prefetchDataSource" destination="RES-fD-zgp" id="3sL-GI-TWi"/>
                         </connections>
                     </tableView>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="ZbZ-Xn-hv3">
