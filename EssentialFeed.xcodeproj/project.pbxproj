@@ -148,6 +148,7 @@
 		A177CD612DCD04A900985D50 /* EssentialFeedCacheIntegrationTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = EssentialFeedCacheIntegrationTests; sourceTree = "<group>"; };
 		A19B635E2DFAFF5D008DE54C /* EssentialFeediOS */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = EssentialFeediOS; sourceTree = "<group>"; };
 		A19B636B2DFAFF5D008DE54C /* EssentialFeediOSTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = EssentialFeediOSTests; sourceTree = "<group>"; };
+		A1A593D32EBA1FAA00C9B7CB /* Feed Presentation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Feed Presentation"; sourceTree = "<group>"; };
 		A1CA1E782D30E3EB00359FD4 /* Feed Cache */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A177CD6D2DCD0F5500985D50 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Feed Cache"; sourceTree = "<group>"; };
 		A1CA1E7E2D30E93900359FD4 /* Helpers */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A1CA1E812D30E93900359FD4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, A177CD6B2DCD0D2500985D50 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, A19B63912DFB0D95008DE54C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Helpers; sourceTree = "<group>"; };
 		A1E455262D537F1300740ABF /* Feed Cache */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A1E455292D537F4500740ABF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Feed Cache"; sourceTree = "<group>"; };
@@ -249,6 +250,7 @@
 				A1CA1E7E2D30E93900359FD4 /* Helpers */,
 				A1CA1E782D30E3EB00359FD4 /* Feed Cache */,
 				A158CF782D0C071C00298F5E /* Feed API */,
+				A1A593D32EBA1FAA00C9B7CB /* Feed Presentation */,
 				080EDF0121B6DA7E00813479 /* Info.plist */,
 			);
 			path = EssentialFeedTests;
@@ -323,6 +325,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				A158CF782D0C071C00298F5E /* Feed API */,
+				A1A593D32EBA1FAA00C9B7CB /* Feed Presentation */,
 				A1CA1E782D30E3EB00359FD4 /* Feed Cache */,
 				A1CA1E7E2D30E93900359FD4 /* Helpers */,
 			);
