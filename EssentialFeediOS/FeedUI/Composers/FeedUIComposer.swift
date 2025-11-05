@@ -8,7 +8,6 @@
 import UIKit
 import EssentialFeed
 
-// test CI
 public final class FeedUIComposer {
     private init() {}
     
