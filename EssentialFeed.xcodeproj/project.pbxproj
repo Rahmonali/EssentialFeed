@@ -19,6 +19,7 @@
 		A1A0A23B2EBB12570023B142 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1A0A2332EBB0AE20023B142 /* Feed.strings */; };
 		A1A0A23D2EBB13110023B142 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A23C2EBB13110023B142 /* FeedViewModel.swift */; };
 		A1A0A23F2EBB133C0023B142 /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A23E2EBB133C0023B142 /* FeedLoadingViewModel.swift */; };
+		A1A0A2412EBB13710023B142 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A2402EBB13710023B142 /* FeedErrorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		A1A0A2392EBB11740023B142 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		A1A0A23C2EBB13110023B142 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		A1A0A23E2EBB133C0023B142 /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
+		A1A0A2402EBB13710023B142 /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -289,6 +291,7 @@
 				A1A0A2392EBB11740023B142 /* FeedPresenter.swift */,
 				A1A0A23C2EBB13110023B142 /* FeedViewModel.swift */,
 				A1A0A23E2EBB133C0023B142 /* FeedLoadingViewModel.swift */,
+				A1A0A2402EBB13710023B142 /* FeedErrorViewModel.swift */,
 				A1A0A2332EBB0AE20023B142 /* Feed.strings */,
 			);
 			path = "Feed Presentation";
@@ -564,6 +567,7 @@
 				A1A0A23D2EBB13110023B142 /* FeedViewModel.swift in Sources */,
 				A1A0A23F2EBB133C0023B142 /* FeedLoadingViewModel.swift in Sources */,
 				A1A0A23A2EBB11740023B142 /* FeedPresenter.swift in Sources */,
+				A1A0A2412EBB13710023B142 /* FeedErrorViewModel.swift in Sources */,
 				080EDF0E21B6DCB600813479 /* FeedLoader.swift in Sources */,
 				080EDF0C21B6DAE800813479 /* FeedImage.swift in Sources */,
 			);
