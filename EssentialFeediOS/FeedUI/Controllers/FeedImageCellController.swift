@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import EssentialFeed
 
 protocol FeedImageCellControllerDelegate {
     func didRequestImage()
@@ -31,7 +32,7 @@ final class FeedImageCellController: FeedImageView {
     }
     
     func cancelLoad() {
-        releseCellForReuse()
+        releaseCellForReuse()
         delegate.didCancelImageRequest()
     }
     
@@ -45,7 +46,7 @@ final class FeedImageCellController: FeedImageView {
         cell?.onRetry = delegate.didRequestImage
     }
     
-    private func releseCellForReuse() {
+    private func releaseCellForReuse() {
         cell = nil
     }
 }
