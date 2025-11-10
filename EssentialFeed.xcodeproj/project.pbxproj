@@ -22,7 +22,7 @@
 		A1A0A23D2EBB13110023B142 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A23C2EBB13110023B142 /* FeedViewModel.swift */; };
 		A1A0A23F2EBB133C0023B142 /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A23E2EBB133C0023B142 /* FeedLoadingViewModel.swift */; };
 		A1A0A2412EBB13710023B142 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A2402EBB13710023B142 /* FeedErrorViewModel.swift */; };
-		A1B091332EC1B28500F347A1 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0911D2EC1B28500F347A1 /* FeedImageDataLoader.swift */; };
+		A1B0914A2EC1B5EE00F347A1 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0911D2EC1B28500F347A1 /* FeedImageDataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -588,6 +588,7 @@
 				A120B1F82EBB21C4007AAC92 /* FeedImagePresenter.swift in Sources */,
 				A1A0A2412EBB13710023B142 /* FeedErrorViewModel.swift in Sources */,
 				080EDF0E21B6DCB600813479 /* FeedLoader.swift in Sources */,
+				A1B0914A2EC1B5EE00F347A1 /* FeedImageDataLoader.swift in Sources */,
 				080EDF0C21B6DAE800813479 /* FeedImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,7 +618,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B091332EC1B28500F347A1 /* FeedImageDataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
