@@ -22,6 +22,7 @@
 		A1A0A23D2EBB13110023B142 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A23C2EBB13110023B142 /* FeedViewModel.swift */; };
 		A1A0A23F2EBB133C0023B142 /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A23E2EBB133C0023B142 /* FeedLoadingViewModel.swift */; };
 		A1A0A2412EBB13710023B142 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A2402EBB13710023B142 /* FeedErrorViewModel.swift */; };
+		A1B091332EC1B28500F347A1 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0911D2EC1B28500F347A1 /* FeedImageDataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		A1A0A23C2EBB13110023B142 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		A1A0A23E2EBB133C0023B142 /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
 		A1A0A2402EBB13710023B142 /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
+		A1B0911D2EC1B28500F347A1 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -252,6 +254,7 @@
 		080EDEF321B6DA7E00813479 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				A1B091472EC1B34E00F347A1 /* FeedFeature */,
 				A1E455262D537F1300740ABF /* Feed Cache */,
 				A11512A72D095DFF00E9AFC2 /* Feed API */,
 				A1A0A2382EBB11310023B142 /* Feed Presentation */,
@@ -301,6 +304,14 @@
 				A1A0A2332EBB0AE20023B142 /* Feed.strings */,
 			);
 			path = "Feed Presentation";
+			sourceTree = "<group>";
+		};
+		A1B091472EC1B34E00F347A1 /* FeedFeature */ = {
+			isa = PBXGroup;
+			children = (
+				A1B0911D2EC1B28500F347A1 /* FeedImageDataLoader.swift */,
+			);
+			path = FeedFeature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,6 +617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B091332EC1B28500F347A1 /* FeedImageDataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
