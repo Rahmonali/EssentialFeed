@@ -155,6 +155,7 @@
 				FeedImageDataStore.swift,
 				FeedStore.swift,
 				Infrastructure/CoreData/CoreDataFeedStore.swift,
+				"Infrastructure/CoreData/CoreDataFeedStore+FeedImageDataLoader.swift",
 				Infrastructure/CoreData/FeedStore2.xcdatamodeld,
 				Infrastructure/CoreData/ManagedCache.swift,
 				Infrastructure/CoreData/NSPersistentContainer.swift,
