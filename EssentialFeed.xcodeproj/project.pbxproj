@@ -106,6 +106,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				FeedItemsMapper.swift,
+				Helpers/HTTPURLResponse.swift,
 				HTTPClient.swift,
 				RemoteFeedImageDataLoader.swift,
 				RemoteFeedItem.swift,
@@ -260,8 +261,8 @@
 			children = (
 				A1B091472EC1B34E00F347A1 /* FeedFeature */,
 				A1E455262D537F1300740ABF /* Feed Cache */,
-				A11512A72D095DFF00E9AFC2 /* Feed API */,
 				A1A0A2382EBB11310023B142 /* Feed Presentation */,
+				A11512A72D095DFF00E9AFC2 /* Feed API */,
 				080EDEF521B6DA7E00813479 /* Info.plist */,
 				080EDF1021B6DFA200813479 /* Feed Feature */,
 			);
