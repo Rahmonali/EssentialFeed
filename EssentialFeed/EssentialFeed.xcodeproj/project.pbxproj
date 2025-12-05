@@ -124,6 +124,7 @@
 			membershipExceptions = (
 				FeedSnapshotTests.swift,
 				"Helpers/UIImage+TestHelpers.swift",
+				"Helpers/UIViewController+Snapshot.swift .swift",
 			);
 			target = A19B63662DFAFF5D008DE54C /* EssentialFeediOSTests */;
 		};
