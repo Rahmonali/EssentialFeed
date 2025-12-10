@@ -142,6 +142,7 @@
 				FeedSnapshotTests.swift,
 				"Helpers/UIImage+TestHelpers.swift",
 				"Helpers/UIViewController+Snapshot.swift .swift",
+				"Helpers/XCTestCase+Snapshot.swift .swift",
 				snapshots/EMPTY_FEED_dark.png,
 				snapshots/EMPTY_FEED_light.png,
 				snapshots/FEED_WITH_CONTENT_dark.png,
