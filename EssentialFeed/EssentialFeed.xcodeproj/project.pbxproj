@@ -125,6 +125,14 @@
 				"Helpers/UIImage+TestHelpers.swift",
 				"Helpers/UIViewController+Snapshot.swift .swift",
 				"Helpers/XCTestCase+Snapshot.swift .swift",
+				snapshots/EMPTY_FEED_dark.png,
+				snapshots/EMPTY_FEED_light.png,
+				snapshots/FEED_WITH_CONTENT_dark.png,
+				snapshots/FEED_WITH_CONTENT_light.png,
+				snapshots/FEED_WITH_ERROR_MESSAGE_dark.png,
+				snapshots/FEED_WITH_ERROR_MESSAGE_light.png,
+				snapshots/FEED_WITH_FAILED_IMAGE_LOADING_dark.png,
+				snapshots/FEED_WITH_FAILED_IMAGE_LOADING_light.png,
 			);
 			target = A19B63662DFAFF5D008DE54C /* EssentialFeediOSTests */;
 		};
@@ -133,6 +141,15 @@
 			membershipExceptions = (
 				FeedSnapshotTests.swift,
 				"Helpers/UIImage+TestHelpers.swift",
+				"Helpers/UIViewController+Snapshot.swift .swift",
+				snapshots/EMPTY_FEED_dark.png,
+				snapshots/EMPTY_FEED_light.png,
+				snapshots/FEED_WITH_CONTENT_dark.png,
+				snapshots/FEED_WITH_CONTENT_light.png,
+				snapshots/FEED_WITH_ERROR_MESSAGE_dark.png,
+				snapshots/FEED_WITH_ERROR_MESSAGE_light.png,
+				snapshots/FEED_WITH_FAILED_IMAGE_LOADING_dark.png,
+				snapshots/FEED_WITH_FAILED_IMAGE_LOADING_light.png,
 			);
 			target = A1121F8E2D1D1A4900D96D30 /* EssentialFeedAPIEndToEndTests */;
 		};
