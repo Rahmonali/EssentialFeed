@@ -111,9 +111,11 @@
 				FeedItemsMapper.swift,
 				Helpers/HTTPURLResponse.swift,
 				HTTPClient.swift,
+				ImageCommentsMapper.swift,
 				RemoteFeedImageDataLoader.swift,
 				RemoteFeedItem.swift,
 				RemoteFeedLoader.swift,
+				RemoteImageCommentsLoader.swift,
 				URLSessionHTTPClient.swift,
 			);
 			target = 080EDEF021B6DA7E00813479 /* EssentialFeed */;
