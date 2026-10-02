@@ -25,13 +25,14 @@
 		A1834878306EB0250056B194 /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1834876306EB0250056B194 /* SharedLocalizationTestHelpers.swift */; };
 		A1834879306EB0250056B194 /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1834876306EB0250056B194 /* SharedLocalizationTestHelpers.swift */; };
 		A183487A306EB0250056B194 /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1834876306EB0250056B194 /* SharedLocalizationTestHelpers.swift */; };
+		A183487C306F76AC0056B194 /* ResourceLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A183487B306F76AC0056B194 /* ResourceLoadingView.swift */; };
 		A19B63682DFAFF5D008DE54C /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19B635D2DFAFF5D008DE54C /* EssentialFeediOS.framework */; };
 		A19B638B2DFB0C87008DE54C /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080EDEF121B6DA7E00813479 /* EssentialFeed.framework */; platformFilter = ios; };
 		A19B638C2DFB0C87008DE54C /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 080EDEF121B6DA7E00813479 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1A0A23A2EBB11740023B142 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A2392EBB11740023B142 /* FeedPresenter.swift */; };
 		A1A0A23B2EBB12570023B142 /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1A0A2332EBB0AE20023B142 /* Feed.strings */; };
 		A1A0A23D2EBB13110023B142 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A23C2EBB13110023B142 /* FeedViewModel.swift */; };
-		A1A0A23F2EBB133C0023B142 /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A23E2EBB133C0023B142 /* FeedLoadingViewModel.swift */; };
+		A1A0A23F2EBB133C0023B142 /* ResourceLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A23E2EBB133C0023B142 /* ResourceLoadingViewModel.swift */; };
 		A1A0A2412EBB13710023B142 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0A2402EBB13710023B142 /* FeedErrorViewModel.swift */; };
 		A1AE2B8B30663D4400DC64A6 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2B8230663D4400DC64A6 /* HTTPClient.swift */; };
 		A1AE2B8C30663D4400DC64A6 /* ImageCommentsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2B8330663D4400DC64A6 /* ImageCommentsMapper.swift */; };
@@ -180,6 +181,7 @@
 		A1834874306EA7520056B194 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Shared.strings; sourceTree = "<group>"; };
 		A1834875306EA7540056B194 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Shared.strings"; sourceTree = "<group>"; };
 		A1834876306EB0250056B194 /* SharedLocalizationTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTestHelpers.swift; sourceTree = "<group>"; };
+		A183487B306F76AC0056B194 /* ResourceLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingView.swift; sourceTree = "<group>"; };
 		A19B635D2DFAFF5D008DE54C /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19B63672DFAFF5D008DE54C /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A0A2342EBB0AE20023B142 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
@@ -187,7 +189,7 @@
 		A1A0A2372EBB0AF60023B142 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
 		A1A0A2392EBB11740023B142 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		A1A0A23C2EBB13110023B142 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
-		A1A0A23E2EBB133C0023B142 /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
+		A1A0A23E2EBB133C0023B142 /* ResourceLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingViewModel.swift; sourceTree = "<group>"; };
 		A1A0A2402EBB13710023B142 /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
 		A1AE2B8230663D4400DC64A6 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		A1AE2B8330663D4400DC64A6 /* ImageCommentsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsMapper.swift; sourceTree = "<group>"; };
@@ -389,6 +391,8 @@
 			isa = PBXGroup;
 			children = (
 				A183486D306E8FB70056B194 /* LoadResourcePresenter.swift */,
+				A183487B306F76AC0056B194 /* ResourceLoadingView.swift */,
+				A1A0A23E2EBB133C0023B142 /* ResourceLoadingViewModel.swift */,
 				A183486F306EA3EB0056B194 /* Shared.strings */,
 			);
 			path = SharedPresentation;
@@ -406,7 +410,6 @@
 			children = (
 				A1A0A2392EBB11740023B142 /* FeedPresenter.swift */,
 				A1A0A23C2EBB13110023B142 /* FeedViewModel.swift */,
-				A1A0A23E2EBB133C0023B142 /* FeedLoadingViewModel.swift */,
 				A1A0A2402EBB13710023B142 /* FeedErrorViewModel.swift */,
 				A120B1F72EBB21C4007AAC92 /* FeedImagePresenter.swift */,
 				A120B1F92EBB22C9007AAC92 /* FeedImageViewModel.swift */,
@@ -970,7 +973,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1A0A23D2EBB13110023B142 /* FeedViewModel.swift in Sources */,
-				A1A0A23F2EBB133C0023B142 /* FeedLoadingViewModel.swift in Sources */,
+				A1A0A23F2EBB133C0023B142 /* ResourceLoadingViewModel.swift in Sources */,
 				A1A0A23A2EBB11740023B142 /* FeedPresenter.swift in Sources */,
 				A1AE2B8B30663D4400DC64A6 /* HTTPClient.swift in Sources */,
 				A16FD23E306D543A00E05A09 /* FeedImageDataMapper.swift in Sources */,
@@ -990,6 +993,7 @@
 				A1AE2C3C3066459900DC64A6 /* FeedCachePolicy.swift in Sources */,
 				A1AE2C3D3066459900DC64A6 /* FeedImageDataStore.swift in Sources */,
 				A1AE2C3E3066459900DC64A6 /* FeedStore.swift in Sources */,
+				A183487C306F76AC0056B194 /* ResourceLoadingView.swift in Sources */,
 				A1AE2C3F3066459900DC64A6 /* LocalFeedImage.swift in Sources */,
 				A1AE2C403066459900DC64A6 /* LocalFeedImageDataLoader.swift in Sources */,
 				A1AE2C413066459900DC64A6 /* LocalFeedLoader.swift in Sources */,
