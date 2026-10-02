@@ -76,7 +76,7 @@ class FeedPresenterTests: XCTestCase {
         return value
     }
     
-    private class ViewSpy: FeedView, ResourceLoadingView, FeedErrorView {
+    private class ViewSpy: FeedView, ResourceLoadingView, ResourceErrorView {
         enum Message: Hashable {
             case display(errorMessage: String?)
             case display(isLoading: Bool)

@@ -1,5 +1,5 @@
 //
-//  FeedErrorViewModel.swift
+//  ResourceErrorViewModel.swift
 //  EssentialFeed
 //
 //  Created by RF on 05/11/25.
@@ -7,14 +7,14 @@
 
 import Foundation
 
-public struct FeedErrorViewModel {
+public struct ResourceErrorViewModel {
     public let message: String?
     
-    static var noError: FeedErrorViewModel {
-        return FeedErrorViewModel(message: nil)
+    static var noError: ResourceErrorViewModel {
+        return ResourceErrorViewModel(message: nil)
     }
     
-    static func error(message: String) -> FeedErrorViewModel {
-        return FeedErrorViewModel(message: message)
+    static func error(message: String) -> ResourceErrorViewModel {
+        return ResourceErrorViewModel(message: message)
     }
 }
