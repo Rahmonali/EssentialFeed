@@ -30,6 +30,7 @@
 		A183494E3072A4C40056B194 /* ImageCommentsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A183494D3072A4C40056B194 /* ImageCommentsPresenterTests.swift */; };
 		A18349513072A5B90056B194 /* ImageCommentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18349503072A5B90056B194 /* ImageCommentsPresenter.swift */; };
 		A18349543072A6A00056B194 /* ImageComments.strings in Resources */ = {isa = PBXBuildFile; fileRef = A18349523072A6A00056B194 /* ImageComments.strings */; };
+		A18349563072A8730056B194 /* ImageCommentsLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18349553072A8730056B194 /* ImageCommentsLocalizationTests.swift */; };
 		A19B63682DFAFF5D008DE54C /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19B635D2DFAFF5D008DE54C /* EssentialFeediOS.framework */; };
 		A19B638B2DFB0C87008DE54C /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080EDEF121B6DA7E00813479 /* EssentialFeed.framework */; platformFilter = ios; };
 		A19B638C2DFB0C87008DE54C /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 080EDEF121B6DA7E00813479 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -190,6 +191,9 @@
 		A183494D3072A4C40056B194 /* ImageCommentsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsPresenterTests.swift; sourceTree = "<group>"; };
 		A18349503072A5B90056B194 /* ImageCommentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsPresenter.swift; sourceTree = "<group>"; };
 		A18349533072A6A00056B194 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ImageComments.strings; sourceTree = "<group>"; };
+		A18349553072A8730056B194 /* ImageCommentsLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsLocalizationTests.swift; sourceTree = "<group>"; };
+		A18349573072A93E0056B194 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/ImageComments.strings; sourceTree = "<group>"; };
+		A18349583072A93F0056B194 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/ImageComments.strings"; sourceTree = "<group>"; };
 		A19B635D2DFAFF5D008DE54C /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19B63672DFAFF5D008DE54C /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A0A2342EBB0AE20023B142 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
@@ -414,6 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				A183494D3072A4C40056B194 /* ImageCommentsPresenterTests.swift */,
+				A18349553072A8730056B194 /* ImageCommentsLocalizationTests.swift */,
 			);
 			path = ImageCommentsPresentation;
 			sourceTree = "<group>";
@@ -1047,6 +1052,7 @@
 				A1AE2C5F306645AC00DC64A6 /* XCTestCase+MemoryLeakTrackingHelper.swift in Sources */,
 				A1AE2C74306645AC00DC64A6 /* FeedCacheTestHelpers.swift in Sources */,
 				A1834873306EA64E0056B194 /* SharedLocalizationTests.swift in Sources */,
+				A18349563072A8730056B194 /* ImageCommentsLocalizationTests.swift in Sources */,
 				A1AE2C75306645AC00DC64A6 /* FeedImageDataStoreSpy.swift in Sources */,
 				A1AE2C76306645AC00DC64A6 /* FeedStoreSpy.swift in Sources */,
 				A1AE2C77306645AC00DC64A6 /* CacheFeedImageDataUseCaseTests.swift in Sources */,
@@ -1169,6 +1175,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				A18349533072A6A00056B194 /* en */,
+				A18349573072A93E0056B194 /* el */,
+				A18349583072A93F0056B194 /* pt-BR */,
 			);
 			name = ImageComments.strings;
 			sourceTree = "<group>";
