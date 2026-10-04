@@ -8,7 +8,7 @@
 import XCTest
 import EssentialFeed
 
-final class ImageCommentsPresenterTests: XCTestCase {
+class ImageCommentsPresenterTests: XCTestCase {
     
     func test_title_isLocalized() {
         XCTAssertEqual(ImageCommentsPresenter.title, localized("IMAGE_COMMENTS_VIEW_TITLE"))
@@ -16,6 +16,8 @@ final class ImageCommentsPresenterTests: XCTestCase {
     
     func test_map_createsViewModels() {
         let now = Date()
+        let calendar = Calendar(identifier: .gregorian)
+        let locale = Locale(identifier: "en_US_POSIX")
         
         let comments = [
             ImageComment(
@@ -30,7 +32,12 @@ final class ImageCommentsPresenterTests: XCTestCase {
                 username: "another username")
         ]
         
-        let viewModel = ImageCommentsPresenter.map(comments)
+        let viewModel = ImageCommentsPresenter.map(
+            comments,
+            currentDate: now,
+            calendar: calendar,
+            locale: locale
+        )
         
         XCTAssertEqual(viewModel.comments, [
             ImageCommentViewModel(
@@ -46,7 +53,7 @@ final class ImageCommentsPresenterTests: XCTestCase {
         ])
     }
     
-    // MARK: Helpers
+    // MARK: - Helpers
     
     private func localized(_ key: String, file: StaticString = #file, line: UInt = #line) -> String {
         let table = "ImageComments"
@@ -57,4 +64,5 @@ final class ImageCommentsPresenterTests: XCTestCase {
         }
         return value
     }
+    
 }
