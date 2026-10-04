@@ -1,5 +1,5 @@
 //
-//  FeedErrorViewModel.swift
+//  ResourceErrorViewModel.swift
 //  EssentialFeed
 //
 //  Created by RF on 05/11/25.
