@@ -86,7 +86,7 @@
 		A1AE2C8D306645AC00DC64A6 /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C89306645AC00DC64A6 /* FeedLocalizationTests.swift */; };
 		A1AE2C8E306645AC00DC64A6 /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C8A306645AC00DC64A6 /* FeedPresenterTests.swift */; };
 		A1AE2CA0306645B100DC64A6 /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C8F306645B100DC64A6 /* FeedImageCellController.swift */; };
-		A1AE2CA1306645B100DC64A6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C90306645B100DC64A6 /* FeedViewController.swift */; };
+		A1AE2CA1306645B100DC64A6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C90306645B100DC64A6 /* ListViewController.swift */; };
 		A1AE2CA2306645B100DC64A6 /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C93306645B100DC64A6 /* UIImageView+Animations.swift */; };
 		A1AE2CA3306645B100DC64A6 /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C94306645B100DC64A6 /* UIRefreshControl+Helpers.swift */; };
 		A1AE2CA4306645B100DC64A6 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C95306645B100DC64A6 /* UITableView+Dequeueing.swift */; };
@@ -244,7 +244,7 @@
 		A1AE2C89306645AC00DC64A6 /* FeedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizationTests.swift; sourceTree = "<group>"; };
 		A1AE2C8A306645AC00DC64A6 /* FeedPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterTests.swift; sourceTree = "<group>"; };
 		A1AE2C8F306645B100DC64A6 /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
-		A1AE2C90306645B100DC64A6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A1AE2C90306645B100DC64A6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		A1AE2C93306645B100DC64A6 /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
 		A1AE2C94306645B100DC64A6 /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
 		A1AE2C95306645B100DC64A6 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
@@ -629,7 +629,7 @@
 			isa = PBXGroup;
 			children = (
 				A1AE2C8F306645B100DC64A6 /* FeedImageCellController.swift */,
-				A1AE2C90306645B100DC64A6 /* FeedViewController.swift */,
+				A1AE2C90306645B100DC64A6 /* ListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1105,7 +1105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1AE2CA0306645B100DC64A6 /* FeedImageCellController.swift in Sources */,
-				A1AE2CA1306645B100DC64A6 /* FeedViewController.swift in Sources */,
+				A1AE2CA1306645B100DC64A6 /* ListViewController.swift in Sources */,
 				A1AE2CA2306645B100DC64A6 /* UIImageView+Animations.swift in Sources */,
 				A1AE2CA3306645B100DC64A6 /* UIRefreshControl+Helpers.swift in Sources */,
 				A1AE2CA4306645B100DC64A6 /* UITableView+Dequeueing.swift in Sources */,
