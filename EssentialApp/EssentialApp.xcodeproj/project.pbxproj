@@ -54,20 +54,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A137B62E307D0076009012E1 /* Exceptions for "EssentialAppTests" folder in "EssentialApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				CommentsUIIntegrationTests.swift,
-			);
-			target = A1B0971A2EC2FDED00F347A1 /* EssentialApp */;
-		};
-		A137B630307D00BE009012E1 /* Exceptions for "EssentialAppTests" folder in "EssentialAppUIAcceptanceTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				CommentsUIIntegrationTests.swift,
-			);
-			target = A15E45A42ED5D84A00A6EFB1 /* EssentialAppUIAcceptanceTests */;
-		};
 		A1B0972D2EC2FDEE00F347A1 /* Exceptions for "EssentialApp" folder in "EssentialApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -88,10 +74,6 @@
 		};
 		A1FC14B42ECC406D00787C19 /* EssentialAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				A137B62E307D0076009012E1 /* Exceptions for "EssentialAppTests" folder in "EssentialApp" target */,
-				A137B630307D00BE009012E1 /* Exceptions for "EssentialAppTests" folder in "EssentialAppUIAcceptanceTests" target */,
-			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
 		};
