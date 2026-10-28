@@ -66,9 +66,7 @@ extension ListViewController {
         cell(row: row, section: commentsSection) as? ImageCommentCell
     }
     
-    private var commentsSection: Int {
-        return 0
-    }
+    private var commentsSection: Int { 0 }
 }
 
 extension ListViewController {
