@@ -58,7 +58,7 @@
 		A1AE2B8C30663D4400DC64A6 /* ImageCommentsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2B8330663D4400DC64A6 /* ImageCommentsMapper.swift */; };
 		A1AE2B9130663D4400DC64A6 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2B8830663D4400DC64A6 /* URLSessionHTTPClient.swift */; };
 		A1AE2C353066459900DC64A6 /* CoreDataFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C243066459900DC64A6 /* CoreDataFeedStore.swift */; };
-		A1AE2C363066459900DC64A6 /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C253066459900DC64A6 /* CoreDataFeedStore+FeedImageDataLoader.swift */; };
+		A1AE2C363066459900DC64A6 /* CoreDataFeedStore+CoreDataFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C253066459900DC64A6 /* CoreDataFeedStore+CoreDataFeedStore.swift */; };
 		A1AE2C373066459900DC64A6 /* CoreDataFeedStore+FeedStore.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C263066459900DC64A6 /* CoreDataFeedStore+FeedStore.swift .swift */; };
 		A1AE2C383066459900DC64A6 /* FeedStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C273066459900DC64A6 /* FeedStore.xcdatamodeld */; };
 		A1AE2C393066459900DC64A6 /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AE2C283066459900DC64A6 /* ManagedCache.swift */; };
@@ -241,7 +241,7 @@
 		A1AE2B8330663D4400DC64A6 /* ImageCommentsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsMapper.swift; sourceTree = "<group>"; };
 		A1AE2B8830663D4400DC64A6 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		A1AE2C243066459900DC64A6 /* CoreDataFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStore.swift; sourceTree = "<group>"; };
-		A1AE2C253066459900DC64A6 /* CoreDataFeedStore+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
+		A1AE2C253066459900DC64A6 /* CoreDataFeedStore+CoreDataFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+CoreDataFeedStore.swift"; sourceTree = "<group>"; };
 		A1AE2C263066459900DC64A6 /* CoreDataFeedStore+FeedStore.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedStore.swift .swift"; sourceTree = "<group>"; };
 		A1AE2C283066459900DC64A6 /* ManagedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedCache.swift; sourceTree = "<group>"; };
 		A1AE2C293066459900DC64A6 /* ManagedFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedFeedImage.swift; sourceTree = "<group>"; };
@@ -631,7 +631,7 @@
 			isa = PBXGroup;
 			children = (
 				A1AE2C243066459900DC64A6 /* CoreDataFeedStore.swift */,
-				A1AE2C253066459900DC64A6 /* CoreDataFeedStore+FeedImageDataLoader.swift */,
+				A1AE2C253066459900DC64A6 /* CoreDataFeedStore+CoreDataFeedStore.swift */,
 				A1AE2C263066459900DC64A6 /* CoreDataFeedStore+FeedStore.swift .swift */,
 				A1AE2C273066459900DC64A6 /* FeedStore.xcdatamodeld */,
 				A1AE2C283066459900DC64A6 /* ManagedCache.swift */,
@@ -1179,7 +1179,7 @@
 				A120B1FA2EBB22C9007AAC92 /* FeedImageViewModel.swift in Sources */,
 				A1AE2C353066459900DC64A6 /* CoreDataFeedStore.swift in Sources */,
 				A18349513072A5B90056B194 /* ImageCommentsPresenter.swift in Sources */,
-				A1AE2C363066459900DC64A6 /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */,
+				A1AE2C363066459900DC64A6 /* CoreDataFeedStore+CoreDataFeedStore.swift in Sources */,
 				A1AE2C373066459900DC64A6 /* CoreDataFeedStore+FeedStore.swift .swift in Sources */,
 				A1AE2C383066459900DC64A6 /* FeedStore.xcdatamodeld in Sources */,
 				A1AE2C393066459900DC64A6 /* ManagedCache.swift in Sources */,
