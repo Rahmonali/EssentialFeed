@@ -9,6 +9,7 @@ import Foundation
 import EssentialFeed
 import EssentialFeediOS
 import Combine
+import EssentialApp
 
 extension FeedUIIntegrationTests {
     
