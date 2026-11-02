@@ -47,7 +47,9 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     }
     
     func test_insert_overridesPreviouslyInsertedCacheValues() {
+        let sut = makeSUT()
         
+        assertThatInsertOverridesPreviouslyInsertedCacheValues(on: sut)
     }
     
     func test_delete_deliversNoErrorOnEmptyCache() {
@@ -71,21 +73,16 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     func test_delete_emptiesPreviouslyInsertedCache() {
         let sut = makeSUT()
         
-//        assertThatDeleteEmptiesPreviouslyInsertedCache(on: sut)
-    }
-    
-    func test_storeSideEffects_runSerially() {
-        let sut = makeSUT()
-        
-        assertThatSideEffectsRunSerially(on: sut)
+        assertThatDeleteEmptiesPreviouslyInsertedCache(on: sut)
     }
     
     // - MARK: Helpers
     
-    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> FeedStore {
+    private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> FeedStore {
         let storeURL = URL(fileURLWithPath: "/dev/null")
         let sut = try! CoreDataFeedStore(storeURL: storeURL)
         trackForMemoryLeaks(sut, file: file, line: line)
         return sut
     }
+    
 }
