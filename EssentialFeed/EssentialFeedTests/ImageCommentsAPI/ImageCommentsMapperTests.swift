@@ -8,11 +8,11 @@
 import XCTest
 import EssentialFeed
 
+@MainActor
 class ImageCommentsMapperTests: XCTestCase {
     
     func test_map_throwsErrorOnNon2xxHTTPResponse() throws {
         let json = makeItemsJSON([])
-        
         let samples = [199, 150, 300, 400, 500]
         
         try samples.forEach { code in
@@ -37,7 +37,7 @@ class ImageCommentsMapperTests: XCTestCase {
         let emptyListJSON = makeItemsJSON([])
         let samples = [200, 201, 250, 280, 299]
         
-        try samples.enumerated().forEach { index, code in
+        try samples.forEach { code in
             let result = try ImageCommentsMapper.map(emptyListJSON, from: HTTPURLResponse(statusCode: code))
             
             XCTAssertEqual(result, [])
@@ -60,8 +60,7 @@ class ImageCommentsMapperTests: XCTestCase {
         let json = makeItemsJSON([item1.json, item2.json])
         let samples = [200, 201, 250, 280, 299]
         
-        try samples.enumerated().forEach { index, code in
-            
+        try samples.forEach { code in
             let result = try ImageCommentsMapper.map(json, from: HTTPURLResponse(statusCode: code))
             
             XCTAssertEqual(result, [item1.model, item2.model])

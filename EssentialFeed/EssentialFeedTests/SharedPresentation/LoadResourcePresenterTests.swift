@@ -8,6 +8,7 @@
 import XCTest
 import EssentialFeed
 
+@MainActor
 class LoadResourcePresenterTests: XCTestCase {
     
     func test_init_doesNotSendMessagesToView() {
@@ -27,7 +28,7 @@ class LoadResourcePresenterTests: XCTestCase {
         ])
     }
     
-    func test_didFinishLoadingResource_displaysResourceAndStopsLaoding() {
+    func test_didFinishLoadingResource_displaysResourceAndStopsLoading() {
         let (sut, view) = makeSUT(mapper: { resource in
             resource + " view model"
         })
@@ -46,7 +47,7 @@ class LoadResourcePresenterTests: XCTestCase {
         })
         
         sut.didFinishLoading(with: "resource")
-
+        
         XCTAssertEqual(view.messages, [
             .display(errorMessage: localized("GENERIC_CONNECTION_ERROR")),
             .display(isLoading: false)
@@ -64,7 +65,7 @@ class LoadResourcePresenterTests: XCTestCase {
         ])
     }
     
-    // MARK: Helpers
+    // MARK: - Helpers
     
     private typealias SUT = LoadResourcePresenter<String, ViewSpy>
     
@@ -74,14 +75,13 @@ class LoadResourcePresenterTests: XCTestCase {
         line: UInt = #line
     ) -> (sut: SUT, view: ViewSpy) {
         let view = ViewSpy()
-        let sut = LoadResourcePresenter(resourceView: view, loadingView: view, errorView: view, mapper: mapper)
+        let sut = SUT(resourceView: view, loadingView: view, errorView: view, mapper: mapper)
         trackForMemoryLeaks(view, file: file, line: line)
         trackForMemoryLeaks(sut, file: file, line: line)
-        
         return (sut, view)
     }
     
-    private func localized(_ key: String, file: StaticString = #file, line: UInt = #line) -> String {
+    private func localized(_ key: String, file: StaticString = #filePath, line: UInt = #line) -> String {
         let table = "Shared"
         let bundle = Bundle(for: SUT.self)
         let value = bundle.localizedString(forKey: key, value: nil, table: table)
@@ -114,4 +114,5 @@ class LoadResourcePresenterTests: XCTestCase {
             messages.insert(.display(resourceViewModel: viewModel))
         }
     }
+    
 }
