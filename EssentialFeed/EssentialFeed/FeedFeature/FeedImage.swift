@@ -4,8 +4,8 @@
 
 import Foundation
 
-public struct FeedImage: Hashable {
-	public let id: UUID
+public struct FeedImage: Hashable, Sendable {
+    public let id: UUID
     public let description: String?
     public let location: String?
     public let url: URL

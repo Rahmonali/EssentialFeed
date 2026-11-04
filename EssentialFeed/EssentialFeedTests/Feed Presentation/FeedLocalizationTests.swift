@@ -8,6 +8,7 @@
 import XCTest
 import EssentialFeed
 
+@MainActor
 final class FeedLocalizationTests: XCTestCase {
     
     func test_localizedStrings_haveKeysAndValuesForAllSupportedLocalizations() {
@@ -17,4 +18,3 @@ final class FeedLocalizationTests: XCTestCase {
         assertLocalizedKeyAndValuesExist(in: bundle, table)
     }
 }
-

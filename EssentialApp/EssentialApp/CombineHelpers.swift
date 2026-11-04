@@ -43,7 +43,10 @@ public extension HTTPClient {
         
         return Deferred {
             Future { completion in
-                task = self.get(from: url, completion: completion)
+                nonisolated(unsafe) let uncheckedCompletion = completion
+                task = self.get(from: url, completion: {
+                    uncheckedCompletion($0)
+                })
             }
         }
         .handleEvents(receiveCancel: { task?.cancel() })
@@ -215,6 +218,46 @@ extension AnyDispatchQueueScheduler {
     
     static var immediateOnMainThread: Self {
         DispatchQueue.immediateWhenOnMainThreadScheduler.eraseToAnyScheduler()
+    }
+    
+    static func scheduler(for store: CoreDataFeedStore) -> AnyDispatchQueueScheduler {
+        CoreDataFeedStoreScheduler(store: store).eraseToAnyScheduler()
+    }
+    
+    private struct CoreDataFeedStoreScheduler: Scheduler {
+        let store: CoreDataFeedStore
+        
+        var now: SchedulerTimeType { .init(.now()) }
+        
+        var minimumTolerance: SchedulerTimeType.Stride { .zero }
+        
+        func schedule(after date: DispatchQueue.SchedulerTimeType, interval: DispatchQueue.SchedulerTimeType.Stride, tolerance: DispatchQueue.SchedulerTimeType.Stride, options: DispatchQueue.SchedulerOptions?, _ action: @escaping () -> Void) -> any Cancellable {
+            if store.contextQueue == .main, Thread.isMainThread {
+                action()
+            } else {
+                nonisolated(unsafe) let uncheckedAction = action
+                store.perform { uncheckedAction() }
+            }
+            return AnyCancellable {}
+        }
+        
+        func schedule(after date: DispatchQueue.SchedulerTimeType, tolerance: DispatchQueue.SchedulerTimeType.Stride, options: DispatchQueue.SchedulerOptions?, _ action: @escaping () -> Void) {
+            if store.contextQueue == .main, Thread.isMainThread {
+                action()
+            } else {
+                nonisolated(unsafe) let uncheckedAction = action
+                store.perform { uncheckedAction() }
+            }
+        }
+        
+        func schedule(options: DispatchQueue.SchedulerOptions?, _ action: @escaping () -> Void) {
+            if store.contextQueue == .main, Thread.isMainThread {
+                action()
+            } else {
+                nonisolated(unsafe) let uncheckedAction = action
+                store.perform { uncheckedAction() }
+            }
+        }
     }
 }
 

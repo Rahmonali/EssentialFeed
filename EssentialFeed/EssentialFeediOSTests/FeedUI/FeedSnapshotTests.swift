@@ -9,6 +9,7 @@ import XCTest
 import EssentialFeediOS
 @testable import EssentialFeed
 
+@MainActor
 class FeedSnapshotTests: XCTestCase {
     
     func test_feedWithContent() {
@@ -108,8 +109,6 @@ class FeedSnapshotTests: XCTestCase {
         let cellController = FeedImageCellController(viewModel: stub.viewModel, delegate: stub, selection: {})
         stub.controller = cellController
         
-        let loadMore = LoadMoreCellController(callback: {})
-        loadMore.display(ResourceLoadingViewModel(isLoading: true))
         return [
             CellController(id: UUID(), cellController),
             CellController(id: UUID(), loadMore)
